@@ -3,7 +3,7 @@ import React from "react";
 function ProjectItem({ name, about, technologies }) {
   const technologyElements = technologies.map((technology) => {
     return (
-      <p key={name}>{technology}</p>
+      <span key={technology}>{technology}</span>
     )
   }
   )
@@ -12,9 +12,7 @@ function ProjectItem({ name, about, technologies }) {
       <h3>{name}</h3>
       <p>{about}</p>
       <div className="technologies">
-        <span>
-          {technologyElements}
-        </span>
+        {technologyElements}
       </div>
     </div>
   );

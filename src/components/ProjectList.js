@@ -18,8 +18,8 @@ function ProjectList({ projects }) {
     <div id="projects">
       <h2>My Projects</h2>
       <div id="project-list">
-      </div>
         {projectElements}
+      </div>
     </div>
   )
 }
